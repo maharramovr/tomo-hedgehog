@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomo Hedgehog Game</title>
+  </head>
+  <body>
+    <div id="scoreDisplay">Score: 0</div>
+    <div id="connectWalletBtn">Connect Wallet</div>
+    <div id="startMessage">Press Space to start the game</div>
+    <canvas id="gameCanvas"></canvas>
+    <audio id="jumpSound" src="/jump.mp3" preload="auto"></audio>
+    <audio id="weideMusic" src="/weide.mp3" preload="auto"></audio>
+    <div id="rulesModal">
+      <div id="rulesContent">
+        <h2>How to Play</h2>
+        <p>🦔 Press <strong>Space</strong> to jump.</p>
+        <p>⚠️ Avoid the stop signs or the game ends.</p>
+        <p>🏆 Connect wallet to track your scores and compete for rewards.</p>
+        <button id="closeRules">Start Game</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  <script type="module" src="https://unpkg.com/@tomo-inc/tomo-web-sdk@latest/+esm"></script>
+</body>
+</html>
